@@ -33,6 +33,8 @@ export var SandDanceModel = widgets.DOMWidgetModel.extend({
 export var SandDanceView = widgets.DOMWidgetView.extend({
     // Defines how the widget gets rendered into the DOM
     render: function() {
+        // this.value_changed();
+        //
 
         const explorerProps = {
             logoClickUrl: 'https://microsoft.github.io/SandDance/',
@@ -41,9 +43,16 @@ export var SandDanceView = widgets.DOMWidgetView.extend({
                 this.explorer = explorer;
                 this.model.on('change:value', this.value_changed, this);
             },
+            // style: {
+            //     width: '80vw',
+            //     height: '50vh',
+            // }
         };
 
-        ReactDOM.render(React.createElement(Explorer, explorerProps));
+        ReactDOM.render(React.createElement('div', {style: {width: '80vw', height: '50vh'}} , [React.createElement(Explorer, explorerProps)]), this.el);
+
+        // Observe changes in the value traitlet in Python, and define
+        // a custom callback.
     },
 
     value_changed: function() {
