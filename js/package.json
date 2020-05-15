@@ -20,7 +20,8 @@
     "dist/*.js"
   ],
   "scripts": {
-    "build": "webpack --config webpack.config.js ",
+    "build": "webpack --config webpack.config.js",
+    "build:dev": "webpack --config webpack.config.js --mode=development",
     "prebuild": "rimraf dist/ ",
     "test": "echo notest"
   },

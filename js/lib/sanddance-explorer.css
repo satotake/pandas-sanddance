@@ -1,7 +1,16 @@
+/* customized */
 .sanddance-explorer {
-    height: 70vh;
+    height: 100%;
 }
 
+
+.sanddance-legend .label {
+    /* override jupyter's style */
+    color: #111;
+}
+
+
+/* original sanddance-explorer.css */
 .sanddance-root {
   height: 100%;
   position: relative;
