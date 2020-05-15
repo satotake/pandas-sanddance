@@ -1,0 +1,18 @@
+*.egg-info/
+.ipynb_checkpoints/
+dist/
+build/
+*.py[cod]
+node_modules/
+env/
+
+# Compiled javascript
+pandas_sanddance/static
+
+# OS X
+.DS_Store
+
+repl-temp-*
+
+# test
+test-notebooks/

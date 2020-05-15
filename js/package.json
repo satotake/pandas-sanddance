@@ -1,0 +1,51 @@
+{
+  "name": "pandas-sanddance",
+  "version": "0.1.0",
+  "description": "Jupyter Widget",
+  "author": "satotake",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//pandas-sanddance.git"
+  },
+  "keywords": [
+    "jupyter",
+    "widgets",
+    "ipython",
+    "ipywidgets",
+    "jupyterlab-extension"
+  ],
+  "files": [
+    "lib/**/*.js",
+    "dist/*.js"
+  ],
+  "scripts": {
+    "build": "webpack --config webpack.config.js ",
+    "prebuild": "rimraf dist/ ",
+    "test": "echo notest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@msrvida/sanddance-explorer": "^2",
+    "@types/react-dom": "^16.3.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "rimraf": "^2.6.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@deck.gl/core": "6.4",
+    "@deck.gl/layers": "6.4",
+    "@jupyter-widgets/base": "^1.1 || ^2",
+    "luma.gl": "6.4",
+    "office-ui-fabric-react": "6.204.4",
+    "react-dom": "^16.13.1",
+    "vega": "^5.11"
+  },
+  "jupyterlab": {
+    "extension": "lib/labplugin"
+  }
+}
