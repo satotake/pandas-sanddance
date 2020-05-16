@@ -80,9 +80,9 @@ class NPM(Command):
         npmName = 'npm';
         if platform.system() == 'Windows':
             npmName = 'npm.cmd';
-            
+
         return npmName;
-    
+
     def has_npm(self):
         npmName = self.get_npm_name();
         try:
@@ -127,7 +127,7 @@ with open(os.path.join(here, 'pandas_sanddance', '_version.py')) as f:
 setup_args = {
     'name': 'pandas_sanddance',
     'version': version_ns['__version__'],
-    'description': 'Custom Jupyter Widget Library for inspection of DataFrame',
+    'description': 'Jupyter Sanddance Widget',
     'long_description': LONG_DESCRIPTION,
     'include_package_data': True,
     'data_files': [
@@ -154,7 +154,7 @@ setup_args = {
 
     'author': 'satotake',
     'author_email': 'doublequotation@gmail.coom',
-    'url': 'https://github.com//pandas-sanddance',
+    'url': 'https://github.com/satotake/pandas-sanddance',
     'keywords': [
         'ipython',
         'jupyter',

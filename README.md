@@ -13,7 +13,10 @@ To install use pip:
 
 To install for jupyterlab
 
-    $ jupyter labextension install pandas_sanddance
+[Node.js](https://nodejs.org/en/) required
+
+    $ jupyter labextension install @jupyter-widgets/jupyterlab-manager
+    $ jupyter labextension install pandas-sanddance
 
 For a development installation (requires npm),
 
