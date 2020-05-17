@@ -21,7 +21,7 @@ import React from 'react'
 import '../css/widget.css'
 
 // TODO
-use(fabric as any, vega, deck, layers, luma);
+use(fabric as any, vega, deck as any, layers, luma);
 fabric.initializeIcons();
 
 export class SandDanceModel extends DOMWidgetModel {
