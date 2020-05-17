@@ -1,6 +1,6 @@
 {
   "name": "pandas-sanddance",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Custom Jupyter Widget for SanDance",
   "keywords": [
     "jupyter",
