@@ -21,8 +21,21 @@ py.test
 npm test
 ```
 
-## release
 
+## develop with jupyterlab
+```bash
+jupyter labextension install .
+```
+
+
+## develop with jupyter notebook
+```bash
+jupyter nbextension install --sys-prefix --symlink --overwrite --py pandas_sanddance 
+jupyter nbextension enable --sys-prefix --py pandas_sanddance
+```
+
+## release
+- Makse sure install dev dependencies of python `pip install -r requirements-dev.txt`
 - Make a release commit, where you remove the `, 'dev'` entry in `_version.py`.
 - Update the version in `package.json`
 - Relase the npm packages:
@@ -33,7 +46,6 @@ npm test
 - Bundle the python package: `python setup.py sdist bdist_wheel`
 - Publish the package to PyPI:
   ```bash
-  pip install twine
   twine upload dist/pandas_sanddance*
   ```
 - Tag the release commit (`git tag <python package version identifier>`)
