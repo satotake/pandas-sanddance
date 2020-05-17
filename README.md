@@ -2,7 +2,7 @@
 
 Custom Jupyter Widget with [SandDance](https://github.com/microsoft/SandDance)
 
-<img src="https://user-images.githubusercontent.com/9415800/82153896-47367b00-98a5-11ea-80bb-aa42be2fc76d.gif" width="80%">
+<img src="https://user-images.githubusercontent.com/9415800/82153896-47367b00-98a5-11ea-80bb-aa42be2fc76d.gif" width="100%">
 
 _NOTE_: this widget is alpha stage for now
 
