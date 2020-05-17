@@ -1,2 +1,0 @@
-recursive-include pandas_sanddance/static *.*
-include pandas-sanddance.json

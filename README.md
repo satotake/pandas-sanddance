@@ -1,38 +1,47 @@
-pandas-sanddance
-===============================
+# pandas-sanddance
 
-Custom Jupyter Widget Library for inspection of DataFrame
+Custom Jupyter Widget SandDance
 
-Installation
-------------
 
-To install use pip:
+_NOTE_: this widget is alpha stage for now
 
-    $ pip install pandas_sanddance
-    $ jupyter nbextension enable --py --sys-prefix pandas_sanddance
+## Installation
 
-To install for jupyterlab
+You can install using `pip`:
 
-[Node.js](https://nodejs.org/en/) required
+```bash
+pip install pandas_sanddance
+```
 
-    $ jupyter labextension install @jupyter-widgets/jupyterlab-manager
-    $ jupyter labextension install pandas-sanddance
+Or if you use jupyterlab:
 
-For a development installation (requires npm),
+```bash
+pip install pandas_sanddance
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+```
 
-    $ git clone https://github.com//pandas-sanddance.git
-    $ cd pandas-sanddance
-    $ pip install -e .
-    $ jupyter nbextension install --py --symlink --sys-prefix pandas_sanddance
-    $ jupyter nbextension enable --py --sys-prefix pandas_sanddance
-    $ jupyter labextension install js
+If you are using Jupyter Notebook 5.2 or earlier, you may also need to enable
+the nbextension:
+```bash
+jupyter nbextension enable --py [--sys-prefix|--user|--system] pandas_sanddance
+```
 
-When actively developing your extension, build Jupyter Lab with the command:
+## Getting Started With
 
-    $ jupyter lab --watch
+See also example/introduction.ipynb
 
-This take a minute or so to get started, but then allows you to hot-reload your javascript extension.
-To see a change, save your javascript, watch the terminal for an update.
+```python
+import pandas as pd
+from pandas_sanddance import SandDanceWidget
+widget = SandDanceWidget()
+widget.show()
 
-Note on first `jupyter lab --watch`, you may need to touch a file to get Jupyter Lab to open.
+df = pd.DataFrame([
+    {'x': 1, 'y': 1: 'text': 'first'},
+    {'x': 2, 'y': 2: 'text': 'second'},
+    {'x': 3, 'y': 3: 'text': 'third'},
+])
+widget.load(df)
+```
 
+Powered by [widget-ts-cookiecutter](https://github.com/jupyter-widgets/widget-ts-cookiecutter)
