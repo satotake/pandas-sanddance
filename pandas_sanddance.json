@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "pandas_sanddance/extension": true
+  }
+}
