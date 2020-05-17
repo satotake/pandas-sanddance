@@ -154,3 +154,7 @@ pandas_sanddance/labextension/*.tgz
 
 # Packed lab extensions
 pandas_sanddance/labextension
+
+
+MANIFEST
+MANIFEST.in
