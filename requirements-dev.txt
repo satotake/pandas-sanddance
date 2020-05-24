@@ -33,8 +33,6 @@ notebook==6.0.3
 numpy==1.18.4
 packaging==20.3
 pandas==1.0.3
-# Editable Git install with no remote (pandas-sanddance==0.2.0)
--e /Users/idg15/dev/github/satotake/temp/pandas-sanddance
 pandocfilters==1.4.2
 parso==0.7.0
 pexpect==4.8.0
