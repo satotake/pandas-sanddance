@@ -52,7 +52,7 @@
     "luma.gl": "6.4",
     "office-ui-fabric-react": "6.204.4",
     "react-dom": ">=16.9.0 <16.10.0",
-    "vega": "5.11.1"
+    "vega": "5.17.3"
   },
   "devDependencies": {
     "@danmarshall/deckgl-typings": "^4.1.8",
